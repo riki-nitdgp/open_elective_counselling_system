@@ -1,0 +1,10 @@
+<?php   
+session_start(); 
+unset($_SESSION["email"]);
+unset($_SESSION["password"]);
+unset($_SESSION["uname"]);
+session_destroy(); 
+header("location:home.php"); 
+exit();
+mysqli_close($conn);
+?>
